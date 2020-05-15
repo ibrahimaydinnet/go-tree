@@ -84,7 +84,7 @@ func (n node) print(wr io.Writer, flags map[string]interface{}) {
 	outputFile := *(flags[constant.Output].(*string))
 	if n.root != nil {
 		for _n := n.root; _n.root != nil; _n = _n.root {
-			prefix := fmt.Sprintf("%s%s", "|", strings.Repeat(" ", 3))
+			prefix := fmt.Sprintf("%s%s", "│", strings.Repeat(" ", 3))
 			if _n.last {
 				prefix = strings.Repeat(" ", 4)
 			}
