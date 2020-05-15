@@ -5,8 +5,7 @@ go-tree is a tool which draws a tree of directory structure
 ```bash
 go get github.com/ibrahimaydinnet/go-tree
 cd <YOUR_GOPATH>/src/github.com/ibrahimaydinnet/go-tree
-go build -mod=vendor
-go install
+go install -mod=vendor
 ```
 
 ## Usage
