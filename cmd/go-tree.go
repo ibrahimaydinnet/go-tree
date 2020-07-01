@@ -36,7 +36,7 @@ func init() {
 	flags[constant.Win] = goTree.PersistentFlags().BoolP(constant.Win, "w", false, "Flag to list hidden files for windows")
 	flags[constant.Find] = goTree.PersistentFlags().StringP(constant.Find, "f", "", "Substring of file names to find")
 	flags[constant.Output] = goTree.PersistentFlags().StringP(constant.Output, "o", "", "File path to write output")
-	flags[constant.Root] = goTree.PersistentFlags().StringP(constant.Root, "r", fmt.Sprintf("%s%s", ".", constant.Seperator), "Root path of the tree")
+	flags[constant.Root] = goTree.PersistentFlags().StringP(constant.Root, "r", fmt.Sprintf(".%s", constant.Seperator), "Root path of the tree")
 	flags[constant.Level] = goTree.PersistentFlags().IntP(constant.Level, "l", 0, "Max level of tree depth")
 }
 
